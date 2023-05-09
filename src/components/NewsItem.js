@@ -7,7 +7,7 @@ export class NewsItem extends Component {
     return (
       <div className="">
         <div className="card">
-          <span class="position-absolute top-0 translate-middle badge rounded-pill bg-danger" style={{ zIndex: '1', left: '90%'}}>
+          <span className="position-absolute top-0 translate-middle badge rounded-pill bg-danger" style={{ zIndex: '1', left: '90%'}}>
             {source.name}
             {/* <span class="visually-hidden">unread messages</span> */}
           </span>
@@ -25,7 +25,7 @@ export class NewsItem extends Component {
             <p className="card-text">{description?.slice(0, 88)}...</p>
             <p className="card-text">
               <small className="text-muted">
-                By {author ? author : "Unknown"} on{" "}
+                By {author ? author : "Unknown"} on
                 {new Date(publishedAt).toGMTString()}
               </small>
             </p>
