@@ -13,7 +13,7 @@ export class Navbar extends Component {
         <nav className="navbar navbar-expand-lg bg-body-tertiary bg-header">
           <div className="container-fluid">
             <Link className="navbar-brand text-white" to="/">
-              <b>NewsMonkey</b>
+              <b>News Monkey</b>
             </Link>
             <button
               className="navbar-toggler"

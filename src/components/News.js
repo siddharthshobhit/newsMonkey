@@ -75,14 +75,13 @@ export class News extends Component {
     return (
       <div className="container">
         <h2>
-          Top Headlines: {this.capitalize(this.props?.category)}{" "}
-          {this.state.totalResults} {this.state.articles?.length} 
+          Top Headlines: {this.capitalize(this.props?.category)} 
         </h2> 
         <InfiniteScroll
           dataLength={this.state.articles}
           next={this.fetchMoreData}
           hasMore={this.state.totalResults != this.state.articles?.length}
-          loader={<Spinner />}
+          loader={this.state.totalResults != this.state.articles?.length && <Spinner />}
         >
           <div className="row my-2">
             {this.state.articles?.map((resp, index) => {
