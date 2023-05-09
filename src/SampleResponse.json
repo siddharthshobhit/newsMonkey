@@ -1,0 +1,82 @@
+{
+  "status": "ok",
+  "totalResults": 7,
+  "articles": [
+    {
+      "source": { "id": "cnn", "name": "CNN" },
+      "author": "",
+      "title": "'Difficult to say with a straight face': Tapper reacts to Fox News' statement on settlement | CNN Politics",
+      "description": "A settlement has been reached in Dominion Voting Systems' defamation case against Fox News, the judge for the case announced. The network will pay more than $787 million to Dominion, a lawyer for the company said.",
+      "url": "http://us.cnn.com/videos/politics/2023/04/18/jake-tapper-dominion-lawsuit-settlement-fox-news-statement-lead-vpx.cnn",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/230418164748-tapper-smile-vpx.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2023-04-18T21:00:42Z",
+      "content": null
+    },
+    {
+      "source": { "id": "cnn", "name": "CNN" },
+      "author": "Arlette Saenz",
+      "title": "Tiny troubles: Toddler infiltrates White House grounds | CNN Politics",
+      "description": "A tiny intruder infiltrated White House grounds Tuesday, prompting a swift response from the US Secret Service.",
+      "url": "http://us.cnn.com/2023/04/18/politics/white-house-toddler/index.html",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/230418130032-01-white-house-toddler.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2023-04-18T17:38:16Z",
+      "content": "A tiny intruder infiltrated White House grounds Tuesday, prompting a swift response from the US Secret Service.\r\nAnthony Guglielmi, chief of communications for the Secret Service, said a toddler craw… [+920 chars]"
+    },
+    {
+      "source": { "id": "cnn", "name": "CNN" },
+      "author": "Stephen Collinson",
+      "title": "The US economy could depend on McCarthy corralling his extremist Republican troops | CNN Politics",
+      "description": "Millions of Americans could face massive consequences unless Speaker Kevin McCarthy can navigate out of a debt trap he has set for President Joe Biden that is instead threatening to capture his House Republicans.",
+      "url": "http://us.cnn.com/2023/04/18/politics/mccarthy-biden-debt-ceiling/index.html",
+      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/230417222359-mccarthy-biden-debt-ceiling-042023.jpg?c=16x9&q=w_800,c_fill",
+      "publishedAt": "2023-04-18T15:59:31Z",
+      "content": "Millions of Americans could face massive consequences unless Speaker Kevin McCarthy can navigate out of a debt trap he has set for President Joe Biden that is instead threatening to capture his House… [+10866 chars]"
+    },
+    {
+      "source": { "id": "newsweek", "name": "Newsweek" },
+      "author": "Mark Davis",
+      "title": "Newsweek",
+      "description": "Newsweek provides in-depth analysis, news and opinion about international issues, technology, business, culture and politics.",
+      "url": "https://www.newsweek.com/",
+      "urlToImage": "https://d.newsweek.com/en/full/2202468/special-presidential-envoy-climate-john-kerry.jpg",
+      "publishedAt": "2023-03-01T12:07:28.8517009Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": "the-washington-times",
+        "name": "The Washington Times"
+      },
+      "author": "The Washington Times https://www.washingtontimes.com",
+      "title": "Latest Quizzes",
+      "description": "Take a break from the hard news of the day and enjoy a quiz on entertainment, sports, history and politics only from The Washington Times.",
+      "url": "https://www.washingtontimes.com/quiz/",
+      "urlToImage": null,
+      "publishedAt": "2022-08-30T16:37:43.8583104Z",
+      "content": "Featured Quizzes\r\nTake the challenge to learn about the life and career highlights of famed nonagenarian actress and comedian Betty White.\r\n Shares \r\nRead our synopsis and correctly identify a litera… [+32510 chars]"
+    },
+    {
+      "source": {
+        "id": "the-american-conservative",
+        "name": "The American Conservative"
+      },
+      "author": null,
+      "title": "Politics Archives - The American Conservative",
+      "description": null,
+      "url": "https://www.theamericanconservative.com/category/politics/",
+      "urlToImage": null,
+      "publishedAt": "2022-07-07T21:37:27.3936289Z",
+      "content": null
+    },
+    {
+      "source": { "id": "the-jerusalem-post", "name": "The Jerusalem Post" },
+      "author": null,
+      "title": "Congresswoman Nita Lowey: I am proud to stand with Israel",
+      "description": "Gantz: Security of Israel is above politics; PA: This is a crime.",
+      "url": "https://www.jpost.com/Arab-Israeli-Conflict/Gantz-Security-of-Israel-is-above-politics-Palestinians-This-is-a-crime-607595",
+      "urlToImage": "https://images.jpost.com/image/upload/f_auto,fl_lossy/t_Article2016_ControlFaceDetect/448812",
+      "publishedAt": "2019-11-13T04:41:00Z",
+      "content": "US Ambassador David M. Friedman said the US stands “with our friend and ally Israel at this critical moment” on social media on Tuesday after roughly 170 rockets were fired on Israel from the Gaza St… [+6160 chars]"
+    }
+  ]
+}
