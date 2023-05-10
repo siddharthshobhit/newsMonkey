@@ -24,7 +24,8 @@ export class News extends Component {
   articles;
   // totalResults = 0;
   constructor(props) {
-    super(props);
+    super(props)  
+    // console.log('Props', this.props)
     this.state = {
       articles: [],
       page: 1,
@@ -46,48 +47,53 @@ export class News extends Component {
   }
 
   getNews = async () => {
+    console.log('Method called')
+    this.props.setProgress(10)
     const data = await fetch(
       `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${this.props.apiKey}&page=${this.state.page}&pageSize=${this.props.pageSize}`
     );
-
+      this.props.setProgress(40);
     let parsedData = await data.json();
+    this.props.setProgress(70);
     this.setState({
       loading: false,
       totalResults: parsedData.totalResults,
       articles: parsedData.articles,
-    }); 
+    });
+    this.props.setProgress(100);
   };
 
   fetchMoreData = async () => {
-    this.setState({ page: this.state.page + 1 });
-    const data = await fetch(
-      `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${this.props.apiKey}&page=${this.state.page}&pageSize=${this.props.pageSize}`
-    );
-    this.setState({ loading: true });
-    let parsedData = await data.json();
-    this.setState({
-      loading: false,
-      articles: this.state.articles.concat(parsedData.articles),
-    });
+    if (this.state.totalResults != this.state.articles?.length) { 
+      this.setState({ page: this.state.page + 1 });
+      const data = await fetch(
+        `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${this.props.apiKey}&page=${this.state.page}&pageSize=${this.props.pageSize}`
+      );
+      this.setState({ loading: true });
+      let parsedData = await data.json();
+      this.setState({
+        loading: false,
+        articles: this.state.articles.concat(parsedData.articles),
+      });
+    }
   };
 
   render() {
     return (
       <div className="container">
-        <h2>
-          Top Headlines: {this.capitalize(this.props?.category)} 
-        </h2> 
+        <h2>Top Headlines: {this.capitalize(this.props?.category)}</h2>
         <InfiniteScroll
           dataLength={this.state.articles}
           next={this.fetchMoreData}
           hasMore={this.state.totalResults != this.state.articles?.length}
-          loader={this.state.totalResults != this.state.articles?.length && <Spinner />}
+          loader={<Spinner />}
         >
           <div className="row my-2">
             {this.state.articles?.map((resp, index) => {
               return (
                 <div className="col-md-4 my-2">
                   <NewsItem
+                    key={resp.description}
                     title={resp.title}
                     description={resp.description}
                     urlToImage={resp.urlToImage}
@@ -100,7 +106,7 @@ export class News extends Component {
               );
             })}
           </div>
-        </InfiniteScroll> 
+        </InfiniteScroll>
       </div>
     );
   }

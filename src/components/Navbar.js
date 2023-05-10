@@ -10,7 +10,7 @@ export class Navbar extends Component {
   render() {
     return (
       <>
-        <nav className="navbar navbar-expand-lg bg-body-tertiary bg-header">
+        <nav className="navbar navbar-expand-lg bg-body-tertiary bg-header text-white">
           <div className="container-fluid">
             <Link className="navbar-brand text-white" to="/">
               <b>NewsMonkey</b>
@@ -23,6 +23,7 @@ export class Navbar extends Component {
               aria-controls="navbarSupportedContent"
               aria-expanded="false"
               aria-label="Toggle navigation"
+              style={{backgroundColor:"white"}}
             >
               <span className="navbar-toggler-icon"></span>
             </button>

@@ -3,24 +3,30 @@ import React, { Component } from "react";
 export class NewsItem extends Component {
   render(props) {
     let { title, description, urlToImage, url, author, publishedAt, source } =
-      this.props;  
+      this.props;
     return (
       <div className="">
         <div className="card">
-          <span className="position-absolute top-0 translate-middle badge rounded-pill bg-danger" style={{ zIndex: '1', left: '90%'}}>
-            {source.name}
-            {/* <span class="visually-hidden">unread messages</span> */}
-          </span>
+          <div
+            style={{
+              display: "flex",
+              position: "absolute",
+              right: 0,
+              justifyContent: "flex-end",
+            }}
+          >
+            <span className="badge bg-danger rounded-pill">{source.name}</span>
+          </div>
 
+          <img
+            src={
+              urlToImage
+                ? urlToImage
+                : "https://images.jpost.com/image/upload/f_auto,fl_lossy/t_Article2016_ControlFaceDetect/448812"
+            }
+            className="card-img-top"
+          />
           <div className="card-body">
-            <img
-              src={
-                urlToImage
-                  ? urlToImage
-                  : "https://images.jpost.com/image/upload/f_auto,fl_lossy/t_Article2016_ControlFaceDetect/448812"
-              }
-              className="card-img-top text-center"
-            />
             <h5 className="card-title">{title?.slice(0, 35)} ...</h5>
             <p className="card-text">{description?.slice(0, 88)}...</p>
             <p className="card-text">
